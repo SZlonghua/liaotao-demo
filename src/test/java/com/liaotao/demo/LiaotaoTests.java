@@ -30,6 +30,14 @@ import java.util.Date;
 public class LiaotaoTests {
 
 	@Test
+	public void test() throws SQLException {
+		String[] ids ={"1","2"};
+		List<String> list = Arrays.asList(ids);
+		System.out.println(list.toString());
+
+	}
+
+	@Test
 	public void contextLoads() throws SQLException {
 		//File file = new File("F:\\tmp\\tomcat.5359390081760107931.8081\\work\\Tomcat\\localhost\\ROOT");
 		//File[] fileList = file.listFiles();
