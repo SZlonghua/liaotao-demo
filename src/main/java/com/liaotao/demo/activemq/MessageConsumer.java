@@ -9,6 +9,7 @@ public class MessageConsumer {
     private static final String ACTIVEMQ_URL = "tcp://127.0.0.1:61616";
     //定义发送消息的队列名称
     private static final String QUEUE_NAME = "MyMessage";
+
     public static void main(String[] args) throws JMSException {
         //创建连接工厂
         ActiveMQConnectionFactory activeMQConnectionFactory = new ActiveMQConnectionFactory(ACTIVEMQ_URL);
@@ -21,6 +22,7 @@ public class MessageConsumer {
         //创建队列目标
         Destination destination = session.createQueue(QUEUE_NAME);
         //创建消费者
+        System.out.println("ssss");
         javax.jms.MessageConsumer consumer = session.createConsumer(destination);
         //创建消费的监听
         consumer.setMessageListener(new MessageListener() {
