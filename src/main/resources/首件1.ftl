@@ -68,98 +68,62 @@
                         xmlns:wpsCustomData="http://www.wps.cn/officeDocument/2013/wpsCustomData"
                         mc:Ignorable="w14 w15 wp14">
                 <w:body>
-                    <w:p>
-                        <w:pPr>
-                            <w:spacing w:line="276" w:lineRule="auto"/>
-                            <w:jc w:val="left"/>
-                            <w:textAlignment w:val="center"/>
-                        </w:pPr>
-                        <w:bookmarkStart w:id="18" w:name="_GoBack"/>
-                        <w:bookmarkEnd w:id="18"/>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="eastAsia"/>
-                            </w:rPr>
-                            <w:t>日期：</w:t>
-                        </w:r>
-                        <w:bookmarkStart w:id="0" w:name="PrintDate"/>
-                        <w:bookmarkEnd w:id="0"/>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="eastAsia"/>
-                            </w:rPr>
-                            <w:t xml:space="preserve">   </w:t>
-                        </w:r>
-                        <w:bookmarkStart w:id="1" w:name="Shift1"/>
-                        <w:bookmarkEnd w:id="1"/>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="eastAsia"/>
-                            </w:rPr>
-                            <w:t xml:space="preserve">    白班       </w:t>
-                        </w:r>
-                        <w:bookmarkStart w:id="2" w:name="Shift2"/>
-                        <w:bookmarkEnd w:id="2"/>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="eastAsia"/>
-                            </w:rPr>
-                            <w:t>夜班 机台：</w:t>
-                        </w:r>
-                        <w:bookmarkStart w:id="3" w:name="WorkGroupName"/>
-                        <w:bookmarkEnd w:id="3"/>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="eastAsia"/>
-                            </w:rPr>
-                            <w:t xml:space="preserve">                    NO:</w:t>
-                        </w:r>
-                        <w:bookmarkStart w:id="4" w:name="LotNo"/>
-                        <w:bookmarkEnd w:id="4"/>
-                    </w:p>
-                    <w:tbl>
-                        <w:tblPr>
-                            <w:tblStyle w:val="4"/>
-                            <w:tblW w:w="11732" w:type="dxa"/>
-                            <w:tblInd w:w="0" w:type="dxa"/>
-                            <w:tblBorders>
-                                <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                            </w:tblBorders>
-                            <w:tblLayout w:type="fixed"/>
-                            <w:tblCellMar>
-                                <w:top w:w="0" w:type="dxa"/>
-                                <w:left w:w="108" w:type="dxa"/>
-                                <w:bottom w:w="0" w:type="dxa"/>
-                                <w:right w:w="108" w:type="dxa"/>
-                            </w:tblCellMar>
-                        </w:tblPr>
-                        <w:tblGrid>
-                            <w:gridCol w:w="430"/>
-                            <w:gridCol w:w="1143"/>
-                            <w:gridCol w:w="1229"/>
-                            <w:gridCol w:w="850"/>
-                            <w:gridCol w:w="254"/>
-                            <w:gridCol w:w="597"/>
-                            <w:gridCol w:w="850"/>
-                            <w:gridCol w:w="702"/>
-                            <w:gridCol w:w="149"/>
-                            <w:gridCol w:w="850"/>
-                            <w:gridCol w:w="416"/>
-                            <w:gridCol w:w="435"/>
-                            <w:gridCol w:w="850"/>
-                            <w:gridCol w:w="131"/>
-                            <w:gridCol w:w="720"/>
-                            <w:gridCol w:w="850"/>
-                            <w:gridCol w:w="851"/>
-                            <w:gridCol w:w="425"/>
-                        </w:tblGrid>
-                        <w:tr>
-                            <w:tblPrEx>
+                    <#if rs?? && (rs?size > 0) >
+                    <#list rs as r>
+                        <w:p>
+                            <w:pPr>
+                                <w:spacing w:line="276" w:lineRule="auto"/>
+                                <w:jc w:val="left"/>
+                                <w:textAlignment w:val="center"/>
+                            </w:pPr>
+                            <w:bookmarkStart w:id="18" w:name="_GoBack"/>
+                            <w:bookmarkEnd w:id="18"/>
+                            <w:r>
+                                <w:rPr>
+                                    <w:rFonts w:hint="eastAsia"/>
+                                </w:rPr>
+                                <w:t>日期：</w:t>
+                            </w:r>
+                            <w:bookmarkStart w:id="0" w:name="PrintDate"/>
+                            <w:bookmarkEnd w:id="0"/>
+                            <w:r>
+                                <w:rPr>
+                                    <w:rFonts w:hint="eastAsia"/>
+                                </w:rPr>
+                                <w:t xml:space="preserve">   </w:t>
+                            </w:r>
+                            <w:bookmarkStart w:id="1" w:name="Shift1"/>
+                            <w:bookmarkEnd w:id="1"/>
+                            <w:r>
+                                <w:rPr>
+                                    <w:rFonts w:hint="eastAsia"/>
+                                </w:rPr>
+                                <w:t xml:space="preserve">    白班       </w:t>
+                            </w:r>
+                            <w:bookmarkStart w:id="2" w:name="Shift2"/>
+                            <w:bookmarkEnd w:id="2"/>
+                            <w:r>
+                                <w:rPr>
+                                    <w:rFonts w:hint="eastAsia"/>
+                                </w:rPr>
+                                <w:t>夜班 机台：</w:t>
+                            </w:r>
+                            <w:bookmarkStart w:id="3" w:name="WorkGroupName"/>
+                            <w:bookmarkEnd w:id="3"/>
+                            <w:r>
+                                <w:rPr>
+                                    <w:rFonts w:hint="eastAsia"/>
+                                </w:rPr>
+                                <w:t xml:space="preserve">                    NO:</w:t>
+                            </w:r>
+                            <w:bookmarkStart w:id="4" w:name="LotNo"/>
+                            <w:bookmarkEnd w:id="4"/>
+                        </w:p>
+                        <w:tbl>
+                            <w:tblPr>
+                                <w:tblStyle w:val="4"/>
+                                <w:tblW w:w="11732" w:type="dxa"/>
+                                <w:tblInd w:w="0" w:type="dxa"/>
                                 <w:tblBorders>
                                     <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
                                     <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
@@ -175,659 +139,416 @@
                                     <w:bottom w:w="0" w:type="dxa"/>
                                     <w:right w:w="108" w:type="dxa"/>
                                 </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="397" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>工 序</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="3780" w:type="dxa"/>
-                                    <w:gridSpan w:val="5"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:bookmarkStart w:id="5" w:name="ProcessName"/>
-                                    <w:bookmarkEnd w:id="5"/>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1701" w:type="dxa"/>
-                                    <w:gridSpan w:val="3"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>首件制作原因</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="4678" w:type="dxa"/>
-                                    <w:gridSpan w:val="8"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="397" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>指令编号</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="3780" w:type="dxa"/>
-                                    <w:gridSpan w:val="5"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:bookmarkStart w:id="6" w:name="MoNumber"/>
-                                    <w:bookmarkEnd w:id="6"/>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1701" w:type="dxa"/>
-                                    <w:gridSpan w:val="3"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>品名规格</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="4678" w:type="dxa"/>
-                                    <w:gridSpan w:val="8"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:bookmarkStart w:id="7" w:name="PartName"/>
-                                    <w:bookmarkEnd w:id="7"/>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="397" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>订单数量</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1229" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:bookmarkStart w:id="8" w:name="TargetQty"/>
-                                    <w:bookmarkEnd w:id="8"/>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1104" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>取样数量</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1447" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:bookmarkStart w:id="9" w:name="SamplQty"/>
-                                    <w:bookmarkEnd w:id="9"/>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1701" w:type="dxa"/>
-                                    <w:gridSpan w:val="3"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>材质规格</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="4678" w:type="dxa"/>
-                                    <w:gridSpan w:val="8"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="397" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>检验时间</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="3780" w:type="dxa"/>
-                                    <w:gridSpan w:val="5"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:bookmarkStart w:id="10" w:name="InspectTime"/>
-                                    <w:bookmarkEnd w:id="10"/>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1701" w:type="dxa"/>
-                                    <w:gridSpan w:val="3"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>取样时间</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="4678" w:type="dxa"/>
-                                    <w:gridSpan w:val="8"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:bookmarkStart w:id="11" w:name="SamplTime"/>
-                                    <w:bookmarkEnd w:id="11"/>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="340" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="430" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>项次</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1143" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>检验项目</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1229" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>检验工具</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="850" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>1</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="851" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>2</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="850" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>3</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="851" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>4</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="850" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>5</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="851" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>6</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="850" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>7</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="851" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>8</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="850" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>9</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="851" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>10</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="425" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>判定</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-
-                        <#if studentList?? && (studentList?size > 0) >
-                        <#list studentList as student>
+                            </w:tblPr>
+                            <w:tblGrid>
+                                <w:gridCol w:w="430"/>
+                                <w:gridCol w:w="1143"/>
+                                <w:gridCol w:w="1229"/>
+                                <w:gridCol w:w="850"/>
+                                <w:gridCol w:w="254"/>
+                                <w:gridCol w:w="597"/>
+                                <w:gridCol w:w="850"/>
+                                <w:gridCol w:w="702"/>
+                                <w:gridCol w:w="149"/>
+                                <w:gridCol w:w="850"/>
+                                <w:gridCol w:w="416"/>
+                                <w:gridCol w:w="435"/>
+                                <w:gridCol w:w="850"/>
+                                <w:gridCol w:w="131"/>
+                                <w:gridCol w:w="720"/>
+                                <w:gridCol w:w="850"/>
+                                <w:gridCol w:w="851"/>
+                                <w:gridCol w:w="425"/>
+                            </w:tblGrid>
+                            <w:tr>
+                                <w:tblPrEx>
+                                    <w:tblBorders>
+                                        <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                    </w:tblBorders>
+                                    <w:tblLayout w:type="fixed"/>
+                                    <w:tblCellMar>
+                                        <w:top w:w="0" w:type="dxa"/>
+                                        <w:left w:w="108" w:type="dxa"/>
+                                        <w:bottom w:w="0" w:type="dxa"/>
+                                        <w:right w:w="108" w:type="dxa"/>
+                                    </w:tblCellMar>
+                                </w:tblPrEx>
+                                <w:trPr>
+                                    <w:trHeight w:val="397" w:hRule="atLeast"/>
+                                </w:trPr>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1573" w:type="dxa"/>
+                                        <w:gridSpan w:val="2"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>工 序</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="3780" w:type="dxa"/>
+                                        <w:gridSpan w:val="5"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:bookmarkStart w:id="5" w:name="ProcessName"/>
+                                        <w:bookmarkEnd w:id="5"/>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1701" w:type="dxa"/>
+                                        <w:gridSpan w:val="3"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>首件制作原因</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="4678" w:type="dxa"/>
+                                        <w:gridSpan w:val="8"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                    </w:p>
+                                </w:tc>
+                            </w:tr>
+                            <w:tr>
+                                <w:tblPrEx>
+                                    <w:tblBorders>
+                                        <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                    </w:tblBorders>
+                                    <w:tblLayout w:type="fixed"/>
+                                    <w:tblCellMar>
+                                        <w:top w:w="0" w:type="dxa"/>
+                                        <w:left w:w="108" w:type="dxa"/>
+                                        <w:bottom w:w="0" w:type="dxa"/>
+                                        <w:right w:w="108" w:type="dxa"/>
+                                    </w:tblCellMar>
+                                </w:tblPrEx>
+                                <w:trPr>
+                                    <w:trHeight w:val="397" w:hRule="atLeast"/>
+                                </w:trPr>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1573" w:type="dxa"/>
+                                        <w:gridSpan w:val="2"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>指令编号</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="3780" w:type="dxa"/>
+                                        <w:gridSpan w:val="5"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:bookmarkStart w:id="6" w:name="MoNumber"/>
+                                        <w:bookmarkEnd w:id="6"/>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1701" w:type="dxa"/>
+                                        <w:gridSpan w:val="3"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>品名规格</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="4678" w:type="dxa"/>
+                                        <w:gridSpan w:val="8"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:bookmarkStart w:id="7" w:name="PartName"/>
+                                        <w:bookmarkEnd w:id="7"/>
+                                    </w:p>
+                                </w:tc>
+                            </w:tr>
+                            <w:tr>
+                                <w:tblPrEx>
+                                    <w:tblBorders>
+                                        <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                    </w:tblBorders>
+                                    <w:tblLayout w:type="fixed"/>
+                                    <w:tblCellMar>
+                                        <w:top w:w="0" w:type="dxa"/>
+                                        <w:left w:w="108" w:type="dxa"/>
+                                        <w:bottom w:w="0" w:type="dxa"/>
+                                        <w:right w:w="108" w:type="dxa"/>
+                                    </w:tblCellMar>
+                                </w:tblPrEx>
+                                <w:trPr>
+                                    <w:trHeight w:val="397" w:hRule="atLeast"/>
+                                </w:trPr>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1573" w:type="dxa"/>
+                                        <w:gridSpan w:val="2"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>订单数量</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1229" w:type="dxa"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:bookmarkStart w:id="8" w:name="TargetQty"/>
+                                        <w:bookmarkEnd w:id="8"/>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1104" w:type="dxa"/>
+                                        <w:gridSpan w:val="2"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>取样数量</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1447" w:type="dxa"/>
+                                        <w:gridSpan w:val="2"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:bookmarkStart w:id="9" w:name="SamplQty"/>
+                                        <w:bookmarkEnd w:id="9"/>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1701" w:type="dxa"/>
+                                        <w:gridSpan w:val="3"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>材质规格</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="4678" w:type="dxa"/>
+                                        <w:gridSpan w:val="8"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                    </w:p>
+                                </w:tc>
+                            </w:tr>
+                            <w:tr>
+                                <w:tblPrEx>
+                                    <w:tblBorders>
+                                        <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                    </w:tblBorders>
+                                    <w:tblLayout w:type="fixed"/>
+                                    <w:tblCellMar>
+                                        <w:top w:w="0" w:type="dxa"/>
+                                        <w:left w:w="108" w:type="dxa"/>
+                                        <w:bottom w:w="0" w:type="dxa"/>
+                                        <w:right w:w="108" w:type="dxa"/>
+                                    </w:tblCellMar>
+                                </w:tblPrEx>
+                                <w:trPr>
+                                    <w:trHeight w:val="397" w:hRule="atLeast"/>
+                                </w:trPr>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1573" w:type="dxa"/>
+                                        <w:gridSpan w:val="2"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>检验时间</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="3780" w:type="dxa"/>
+                                        <w:gridSpan w:val="5"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:bookmarkStart w:id="10" w:name="InspectTime"/>
+                                        <w:bookmarkEnd w:id="10"/>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1701" w:type="dxa"/>
+                                        <w:gridSpan w:val="3"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>取样时间</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="4678" w:type="dxa"/>
+                                        <w:gridSpan w:val="8"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:bookmarkStart w:id="11" w:name="SamplTime"/>
+                                        <w:bookmarkEnd w:id="11"/>
+                                    </w:p>
+                                </w:tc>
+                            </w:tr>
                             <w:tr>
                                 <w:tblPrEx>
                                     <w:tblBorders>
@@ -858,19 +579,12 @@
                                     <w:p>
                                         <w:pPr>
                                             <w:jc w:val="center"/>
-                                            <w:rPr>
-                                                <w:rFonts w:hint="default" w:eastAsia="宋体"/>
-                                                <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                            </w:rPr>
                                         </w:pPr>
-                                        <w:bookmarkStart w:id="12" w:name="Bookmark_table"/>
-                                        <w:bookmarkEnd w:id="12"/>
                                         <w:r>
                                             <w:rPr>
                                                 <w:rFonts w:hint="eastAsia"/>
-                                                <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
                                             </w:rPr>
-                                            <w:t>${student.id}</w:t>
+                                            <w:t>项次</w:t>
                                         </w:r>
                                     </w:p>
                                 </w:tc>
@@ -883,18 +597,674 @@
                                     <w:p>
                                         <w:pPr>
                                             <w:jc w:val="center"/>
-                                            <w:rPr>
-                                                <w:rFonts w:hint="eastAsia" w:eastAsia="宋体"/>
-                                                <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                            </w:rPr>
                                         </w:pPr>
                                         <w:r>
                                             <w:rPr>
                                                 <w:rFonts w:hint="eastAsia"/>
-                                                <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
                                             </w:rPr>
-                                            <w:t>${student.name}</w:t>
+                                            <w:t>检验项目</w:t>
                                         </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1229" w:type="dxa"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>检验工具</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="850" w:type="dxa"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>1</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="851" w:type="dxa"/>
+                                        <w:gridSpan w:val="2"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>2</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="850" w:type="dxa"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>3</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="851" w:type="dxa"/>
+                                        <w:gridSpan w:val="2"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>4</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="850" w:type="dxa"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>5</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="851" w:type="dxa"/>
+                                        <w:gridSpan w:val="2"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>6</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="850" w:type="dxa"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>7</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="851" w:type="dxa"/>
+                                        <w:gridSpan w:val="2"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>8</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="850" w:type="dxa"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>9</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="851" w:type="dxa"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>10</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="425" w:type="dxa"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>判定</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                            </w:tr>
+
+                            <#if r.list?? && (r.list?size > 0) >
+                                <#list r.list as item>
+                                    <w:tr>
+                                        <w:tblPrEx>
+                                            <w:tblBorders>
+                                                <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                                <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                                <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                                <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                                <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                                <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                            </w:tblBorders>
+                                            <w:tblLayout w:type="fixed"/>
+                                            <w:tblCellMar>
+                                                <w:top w:w="0" w:type="dxa"/>
+                                                <w:left w:w="108" w:type="dxa"/>
+                                                <w:bottom w:w="0" w:type="dxa"/>
+                                                <w:right w:w="108" w:type="dxa"/>
+                                            </w:tblCellMar>
+                                        </w:tblPrEx>
+                                        <w:trPr>
+                                            <w:trHeight w:val="340" w:hRule="atLeast"/>
+                                        </w:trPr>
+                                        <w:tc>
+                                            <w:tcPr>
+                                                <w:tcW w:w="430" w:type="dxa"/>
+                                                <w:noWrap w:val="0"/>
+                                                <w:vAlign w:val="center"/>
+                                            </w:tcPr>
+                                            <w:p>
+                                                <w:pPr>
+                                                    <w:jc w:val="center"/>
+                                                    <w:rPr>
+                                                        <w:rFonts w:hint="default" w:eastAsia="宋体"/>
+                                                        <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
+                                                    </w:rPr>
+                                                </w:pPr>
+                                                <w:bookmarkStart w:id="12" w:name="Bookmark_table"/>
+                                                <w:bookmarkEnd w:id="12"/>
+                                                <w:r>
+                                                    <w:rPr>
+                                                        <w:rFonts w:hint="eastAsia"/>
+                                                        <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
+                                                    </w:rPr>
+                                                    <w:t>${item.sequece}</w:t>
+                                                </w:r>
+                                            </w:p>
+                                        </w:tc>
+                                        <w:tc>
+                                            <w:tcPr>
+                                                <w:tcW w:w="1143" w:type="dxa"/>
+                                                <w:noWrap w:val="0"/>
+                                                <w:vAlign w:val="center"/>
+                                            </w:tcPr>
+                                            <w:p>
+                                                <w:pPr>
+                                                    <w:jc w:val="center"/>
+                                                    <w:rPr>
+                                                        <w:rFonts w:hint="eastAsia" w:eastAsia="宋体"/>
+                                                        <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
+                                                    </w:rPr>
+                                                </w:pPr>
+                                                <w:r>
+                                                    <w:rPr>
+                                                        <w:rFonts w:hint="eastAsia"/>
+                                                        <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
+                                                    </w:rPr>
+                                                    <w:t>${item.name}</w:t>
+                                                </w:r>
+                                            </w:p>
+                                        </w:tc>
+                                        <w:tc>
+                                            <w:tcPr>
+                                                <w:tcW w:w="1229" w:type="dxa"/>
+                                                <w:noWrap w:val="0"/>
+                                                <w:vAlign w:val="center"/>
+                                            </w:tcPr>
+                                            <w:p>
+                                                <w:pPr>
+                                                    <w:jc w:val="center"/>
+                                                </w:pPr>
+                                            </w:p>
+                                        </w:tc>
+                                        <w:tc>
+                                            <w:tcPr>
+                                                <w:tcW w:w="850" w:type="dxa"/>
+                                                <w:noWrap w:val="0"/>
+                                                <w:vAlign w:val="center"/>
+                                            </w:tcPr>
+                                            <w:p>
+                                                <w:pPr>
+                                                    <w:jc w:val="center"/>
+                                                    <w:rPr>
+                                                        <w:rFonts w:hint="eastAsia" w:eastAsia="宋体"/>
+                                                        <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
+                                                    </w:rPr>
+                                                </w:pPr>
+                                                <w:r>
+                                                    <w:rPr>
+                                                        <w:rFonts w:hint="eastAsia"/>
+                                                        <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
+                                                    </w:rPr>
+                                                    <w:t></w:t>
+                                                </w:r>
+                                            </w:p>
+                                        </w:tc>
+                                        <w:tc>
+                                            <w:tcPr>
+                                                <w:tcW w:w="851" w:type="dxa"/>
+                                                <w:gridSpan w:val="2"/>
+                                                <w:noWrap w:val="0"/>
+                                                <w:vAlign w:val="center"/>
+                                            </w:tcPr>
+                                            <w:p>
+                                                <w:pPr>
+                                                    <w:jc w:val="center"/>
+                                                    <w:rPr>
+                                                        <w:rFonts w:hint="eastAsia" w:eastAsia="宋体"/>
+                                                        <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
+                                                    </w:rPr>
+                                                </w:pPr>
+                                                <w:r>
+                                                    <w:rPr>
+                                                        <w:rFonts w:hint="eastAsia"/>
+                                                        <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
+                                                    </w:rPr>
+                                                    <w:t></w:t>
+                                                </w:r>
+                                            </w:p>
+                                        </w:tc>
+                                        <w:tc>
+                                            <w:tcPr>
+                                                <w:tcW w:w="850" w:type="dxa"/>
+                                                <w:noWrap w:val="0"/>
+                                                <w:vAlign w:val="center"/>
+                                            </w:tcPr>
+                                            <w:p>
+                                                <w:pPr>
+                                                    <w:jc w:val="center"/>
+                                                    <w:rPr>
+                                                        <w:rFonts w:hint="eastAsia" w:eastAsia="宋体"/>
+                                                        <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
+                                                    </w:rPr>
+                                                </w:pPr>
+                                                <w:r>
+                                                    <w:rPr>
+                                                        <w:rFonts w:hint="eastAsia"/>
+                                                        <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
+                                                    </w:rPr>
+                                                    <w:t></w:t>
+                                                </w:r>
+                                            </w:p>
+                                        </w:tc>
+                                        <w:tc>
+                                            <w:tcPr>
+                                                <w:tcW w:w="851" w:type="dxa"/>
+                                                <w:gridSpan w:val="2"/>
+                                                <w:noWrap w:val="0"/>
+                                                <w:vAlign w:val="center"/>
+                                            </w:tcPr>
+                                            <w:p>
+                                                <w:pPr>
+                                                    <w:jc w:val="center"/>
+                                                </w:pPr>
+                                            </w:p>
+                                        </w:tc>
+                                        <w:tc>
+                                            <w:tcPr>
+                                                <w:tcW w:w="850" w:type="dxa"/>
+                                                <w:noWrap w:val="0"/>
+                                                <w:vAlign w:val="center"/>
+                                            </w:tcPr>
+                                            <w:p>
+                                                <w:pPr>
+                                                    <w:jc w:val="center"/>
+                                                </w:pPr>
+                                            </w:p>
+                                        </w:tc>
+                                        <w:tc>
+                                            <w:tcPr>
+                                                <w:tcW w:w="851" w:type="dxa"/>
+                                                <w:gridSpan w:val="2"/>
+                                                <w:noWrap w:val="0"/>
+                                                <w:vAlign w:val="center"/>
+                                            </w:tcPr>
+                                            <w:p>
+                                                <w:pPr>
+                                                    <w:jc w:val="center"/>
+                                                </w:pPr>
+                                            </w:p>
+                                        </w:tc>
+                                        <w:tc>
+                                            <w:tcPr>
+                                                <w:tcW w:w="850" w:type="dxa"/>
+                                                <w:noWrap w:val="0"/>
+                                                <w:vAlign w:val="center"/>
+                                            </w:tcPr>
+                                            <w:p>
+                                                <w:pPr>
+                                                    <w:jc w:val="center"/>
+                                                </w:pPr>
+                                            </w:p>
+                                        </w:tc>
+                                        <w:tc>
+                                            <w:tcPr>
+                                                <w:tcW w:w="851" w:type="dxa"/>
+                                                <w:gridSpan w:val="2"/>
+                                                <w:noWrap w:val="0"/>
+                                                <w:vAlign w:val="center"/>
+                                            </w:tcPr>
+                                            <w:p>
+                                                <w:pPr>
+                                                    <w:jc w:val="center"/>
+                                                </w:pPr>
+                                            </w:p>
+                                        </w:tc>
+                                        <w:tc>
+                                            <w:tcPr>
+                                                <w:tcW w:w="850" w:type="dxa"/>
+                                                <w:noWrap w:val="0"/>
+                                                <w:vAlign w:val="center"/>
+                                            </w:tcPr>
+                                            <w:p>
+                                                <w:pPr>
+                                                    <w:jc w:val="center"/>
+                                                </w:pPr>
+                                            </w:p>
+                                        </w:tc>
+                                        <w:tc>
+                                            <w:tcPr>
+                                                <w:tcW w:w="851" w:type="dxa"/>
+                                                <w:noWrap w:val="0"/>
+                                                <w:vAlign w:val="center"/>
+                                            </w:tcPr>
+                                            <w:p>
+                                                <w:pPr>
+                                                    <w:jc w:val="center"/>
+                                                </w:pPr>
+                                            </w:p>
+                                        </w:tc>
+                                        <w:tc>
+                                            <w:tcPr>
+                                                <w:tcW w:w="425" w:type="dxa"/>
+                                                <w:noWrap w:val="0"/>
+                                                <w:vAlign w:val="center"/>
+                                            </w:tcPr>
+                                            <w:p>
+                                                <w:pPr>
+                                                    <w:jc w:val="center"/>
+                                                    <w:rPr>
+                                                        <w:rFonts w:hint="eastAsia" w:eastAsia="宋体"/>
+                                                        <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
+                                                    </w:rPr>
+                                                </w:pPr>
+                                                <w:r>
+                                                    <w:rPr>
+                                                        <w:rFonts w:hint="eastAsia"/>
+                                                        <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
+                                                    </w:rPr>
+                                                    <w:t></w:t>
+                                                </w:r>
+                                            </w:p>
+                                        </w:tc>
+                                    </w:tr>
+
+                                </#list>
+                            <#else>
+                            </#if>
+
+                            <w:tr>
+                                <w:tblPrEx>
+                                    <w:tblBorders>
+                                        <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                    </w:tblBorders>
+                                    <w:tblLayout w:type="fixed"/>
+                                    <w:tblCellMar>
+                                        <w:top w:w="0" w:type="dxa"/>
+                                        <w:left w:w="108" w:type="dxa"/>
+                                        <w:bottom w:w="0" w:type="dxa"/>
+                                        <w:right w:w="108" w:type="dxa"/>
+                                    </w:tblCellMar>
+                                </w:tblPrEx>
+                                <w:trPr>
+                                    <w:trHeight w:val="340" w:hRule="atLeast"/>
+                                </w:trPr>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1573" w:type="dxa"/>
+                                        <w:gridSpan w:val="2"/>
+                                        <w:vMerge w:val="restart"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="top"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>可</w:t>
+                                        </w:r>
+                                    </w:p>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>靠</w:t>
+                                        </w:r>
+                                    </w:p>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>性</w:t>
+                                        </w:r>
+                                    </w:p>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>测</w:t>
+                                        </w:r>
+                                    </w:p>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>试</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1229" w:type="dxa"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>测试项目</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="8505" w:type="dxa"/>
+                                        <w:gridSpan w:val="14"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>规格要求</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="425" w:type="dxa"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                    </w:p>
+                                </w:tc>
+                            </w:tr>
+                            <w:tr>
+                                <w:tblPrEx>
+                                    <w:tblBorders>
+                                        <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                    </w:tblBorders>
+                                    <w:tblLayout w:type="fixed"/>
+                                    <w:tblCellMar>
+                                        <w:top w:w="0" w:type="dxa"/>
+                                        <w:left w:w="108" w:type="dxa"/>
+                                        <w:bottom w:w="0" w:type="dxa"/>
+                                        <w:right w:w="108" w:type="dxa"/>
+                                    </w:tblCellMar>
+                                </w:tblPrEx>
+                                <w:trPr>
+                                    <w:trHeight w:val="340" w:hRule="atLeast"/>
+                                </w:trPr>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1573" w:type="dxa"/>
+                                        <w:gridSpan w:val="2"/>
+                                        <w:vMerge w:val="continue"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="top"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
                                     </w:p>
                                 </w:tc>
                                 <w:tc>
@@ -911,152 +1281,8 @@
                                 </w:tc>
                                 <w:tc>
                                     <w:tcPr>
-                                        <w:tcW w:w="850" w:type="dxa"/>
-                                        <w:noWrap w:val="0"/>
-                                        <w:vAlign w:val="center"/>
-                                    </w:tcPr>
-                                    <w:p>
-                                        <w:pPr>
-                                            <w:jc w:val="center"/>
-                                            <w:rPr>
-                                                <w:rFonts w:hint="eastAsia" w:eastAsia="宋体"/>
-                                                <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                            </w:rPr>
-                                        </w:pPr>
-                                        <w:r>
-                                            <w:rPr>
-                                                <w:rFonts w:hint="eastAsia"/>
-                                                <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                            </w:rPr>
-                                            <w:t>${student.age}</w:t>
-                                        </w:r>
-                                    </w:p>
-                                </w:tc>
-                                <w:tc>
-                                    <w:tcPr>
-                                        <w:tcW w:w="851" w:type="dxa"/>
-                                        <w:gridSpan w:val="2"/>
-                                        <w:noWrap w:val="0"/>
-                                        <w:vAlign w:val="center"/>
-                                    </w:tcPr>
-                                    <w:p>
-                                        <w:pPr>
-                                            <w:jc w:val="center"/>
-                                            <w:rPr>
-                                                <w:rFonts w:hint="eastAsia" w:eastAsia="宋体"/>
-                                                <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                            </w:rPr>
-                                        </w:pPr>
-                                        <w:r>
-                                            <w:rPr>
-                                                <w:rFonts w:hint="eastAsia"/>
-                                                <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                            </w:rPr>
-                                            <w:t></w:t>
-                                        </w:r>
-                                    </w:p>
-                                </w:tc>
-                                <w:tc>
-                                    <w:tcPr>
-                                        <w:tcW w:w="850" w:type="dxa"/>
-                                        <w:noWrap w:val="0"/>
-                                        <w:vAlign w:val="center"/>
-                                    </w:tcPr>
-                                    <w:p>
-                                        <w:pPr>
-                                            <w:jc w:val="center"/>
-                                            <w:rPr>
-                                                <w:rFonts w:hint="eastAsia" w:eastAsia="宋体"/>
-                                                <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                            </w:rPr>
-                                        </w:pPr>
-                                        <w:r>
-                                            <w:rPr>
-                                                <w:rFonts w:hint="eastAsia"/>
-                                                <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                            </w:rPr>
-                                            <w:t></w:t>
-                                        </w:r>
-                                    </w:p>
-                                </w:tc>
-                                <w:tc>
-                                    <w:tcPr>
-                                        <w:tcW w:w="851" w:type="dxa"/>
-                                        <w:gridSpan w:val="2"/>
-                                        <w:noWrap w:val="0"/>
-                                        <w:vAlign w:val="center"/>
-                                    </w:tcPr>
-                                    <w:p>
-                                        <w:pPr>
-                                            <w:jc w:val="center"/>
-                                        </w:pPr>
-                                    </w:p>
-                                </w:tc>
-                                <w:tc>
-                                    <w:tcPr>
-                                        <w:tcW w:w="850" w:type="dxa"/>
-                                        <w:noWrap w:val="0"/>
-                                        <w:vAlign w:val="center"/>
-                                    </w:tcPr>
-                                    <w:p>
-                                        <w:pPr>
-                                            <w:jc w:val="center"/>
-                                        </w:pPr>
-                                    </w:p>
-                                </w:tc>
-                                <w:tc>
-                                    <w:tcPr>
-                                        <w:tcW w:w="851" w:type="dxa"/>
-                                        <w:gridSpan w:val="2"/>
-                                        <w:noWrap w:val="0"/>
-                                        <w:vAlign w:val="center"/>
-                                    </w:tcPr>
-                                    <w:p>
-                                        <w:pPr>
-                                            <w:jc w:val="center"/>
-                                        </w:pPr>
-                                    </w:p>
-                                </w:tc>
-                                <w:tc>
-                                    <w:tcPr>
-                                        <w:tcW w:w="850" w:type="dxa"/>
-                                        <w:noWrap w:val="0"/>
-                                        <w:vAlign w:val="center"/>
-                                    </w:tcPr>
-                                    <w:p>
-                                        <w:pPr>
-                                            <w:jc w:val="center"/>
-                                        </w:pPr>
-                                    </w:p>
-                                </w:tc>
-                                <w:tc>
-                                    <w:tcPr>
-                                        <w:tcW w:w="851" w:type="dxa"/>
-                                        <w:gridSpan w:val="2"/>
-                                        <w:noWrap w:val="0"/>
-                                        <w:vAlign w:val="center"/>
-                                    </w:tcPr>
-                                    <w:p>
-                                        <w:pPr>
-                                            <w:jc w:val="center"/>
-                                        </w:pPr>
-                                    </w:p>
-                                </w:tc>
-                                <w:tc>
-                                    <w:tcPr>
-                                        <w:tcW w:w="850" w:type="dxa"/>
-                                        <w:noWrap w:val="0"/>
-                                        <w:vAlign w:val="center"/>
-                                    </w:tcPr>
-                                    <w:p>
-                                        <w:pPr>
-                                            <w:jc w:val="center"/>
-                                        </w:pPr>
-                                    </w:p>
-                                </w:tc>
-                                <w:tc>
-                                    <w:tcPr>
-                                        <w:tcW w:w="851" w:type="dxa"/>
+                                        <w:tcW w:w="8505" w:type="dxa"/>
+                                        <w:gridSpan w:val="14"/>
                                         <w:noWrap w:val="0"/>
                                         <w:vAlign w:val="center"/>
                                     </w:tcPr>
@@ -1075,2762 +1301,678 @@
                                     <w:p>
                                         <w:pPr>
                                             <w:jc w:val="center"/>
-                                            <w:rPr>
-                                                <w:rFonts w:hint="eastAsia" w:eastAsia="宋体"/>
-                                                <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                            </w:rPr>
+                                        </w:pPr>
+                                    </w:p>
+                                </w:tc>
+                            </w:tr>
+                            <w:tr>
+                                <w:tblPrEx>
+                                    <w:tblBorders>
+                                        <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                    </w:tblBorders>
+                                    <w:tblLayout w:type="fixed"/>
+                                    <w:tblCellMar>
+                                        <w:top w:w="0" w:type="dxa"/>
+                                        <w:left w:w="108" w:type="dxa"/>
+                                        <w:bottom w:w="0" w:type="dxa"/>
+                                        <w:right w:w="108" w:type="dxa"/>
+                                    </w:tblCellMar>
+                                </w:tblPrEx>
+                                <w:trPr>
+                                    <w:trHeight w:val="340" w:hRule="atLeast"/>
+                                </w:trPr>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1573" w:type="dxa"/>
+                                        <w:gridSpan w:val="2"/>
+                                        <w:vMerge w:val="continue"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="top"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1229" w:type="dxa"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="8505" w:type="dxa"/>
+                                        <w:gridSpan w:val="14"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="425" w:type="dxa"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                    </w:p>
+                                </w:tc>
+                            </w:tr>
+                            <w:tr>
+                                <w:tblPrEx>
+                                    <w:tblBorders>
+                                        <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                    </w:tblBorders>
+                                    <w:tblLayout w:type="fixed"/>
+                                    <w:tblCellMar>
+                                        <w:top w:w="0" w:type="dxa"/>
+                                        <w:left w:w="108" w:type="dxa"/>
+                                        <w:bottom w:w="0" w:type="dxa"/>
+                                        <w:right w:w="108" w:type="dxa"/>
+                                    </w:tblCellMar>
+                                </w:tblPrEx>
+                                <w:trPr>
+                                    <w:trHeight w:val="340" w:hRule="atLeast"/>
+                                </w:trPr>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1573" w:type="dxa"/>
+                                        <w:gridSpan w:val="2"/>
+                                        <w:vMerge w:val="continue"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="top"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1229" w:type="dxa"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="8505" w:type="dxa"/>
+                                        <w:gridSpan w:val="14"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="425" w:type="dxa"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                    </w:p>
+                                </w:tc>
+                            </w:tr>
+                            <w:tr>
+                                <w:tblPrEx>
+                                    <w:tblBorders>
+                                        <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                    </w:tblBorders>
+                                    <w:tblLayout w:type="fixed"/>
+                                    <w:tblCellMar>
+                                        <w:top w:w="0" w:type="dxa"/>
+                                        <w:left w:w="108" w:type="dxa"/>
+                                        <w:bottom w:w="0" w:type="dxa"/>
+                                        <w:right w:w="108" w:type="dxa"/>
+                                    </w:tblCellMar>
+                                </w:tblPrEx>
+                                <w:trPr>
+                                    <w:trHeight w:val="340" w:hRule="atLeast"/>
+                                </w:trPr>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1573" w:type="dxa"/>
+                                        <w:gridSpan w:val="2"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
                                         </w:pPr>
                                         <w:r>
                                             <w:rPr>
                                                 <w:rFonts w:hint="eastAsia"/>
-                                                <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
                                             </w:rPr>
-                                            <w:t>${student.sex}</w:t>
+                                            <w:t>外观</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="10159" w:type="dxa"/>
+                                        <w:gridSpan w:val="16"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                    </w:p>
+                                </w:tc>
+                            </w:tr>
+                            <w:tr>
+                                <w:tblPrEx>
+                                    <w:tblBorders>
+                                        <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                    </w:tblBorders>
+                                    <w:tblLayout w:type="fixed"/>
+                                    <w:tblCellMar>
+                                        <w:top w:w="0" w:type="dxa"/>
+                                        <w:left w:w="108" w:type="dxa"/>
+                                        <w:bottom w:w="0" w:type="dxa"/>
+                                        <w:right w:w="108" w:type="dxa"/>
+                                    </w:tblCellMar>
+                                </w:tblPrEx>
+                                <w:trPr>
+                                    <w:trHeight w:val="340" w:hRule="atLeast"/>
+                                </w:trPr>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1573" w:type="dxa"/>
+                                        <w:gridSpan w:val="2"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>结构</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="4482" w:type="dxa"/>
+                                        <w:gridSpan w:val="6"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="1415" w:type="dxa"/>
+                                        <w:gridSpan w:val="3"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>实配</w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="4262" w:type="dxa"/>
+                                        <w:gridSpan w:val="7"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="center"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:jc w:val="center"/>
+                                        </w:pPr>
+                                    </w:p>
+                                </w:tc>
+                            </w:tr>
+                            <w:tr>
+                                <w:tblPrEx>
+                                    <w:tblBorders>
+                                        <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                    </w:tblBorders>
+                                    <w:tblLayout w:type="fixed"/>
+                                    <w:tblCellMar>
+                                        <w:top w:w="0" w:type="dxa"/>
+                                        <w:left w:w="108" w:type="dxa"/>
+                                        <w:bottom w:w="0" w:type="dxa"/>
+                                        <w:right w:w="108" w:type="dxa"/>
+                                    </w:tblCellMar>
+                                </w:tblPrEx>
+                                <w:trPr>
+                                    <w:trHeight w:val="1787" w:hRule="atLeast"/>
+                                </w:trPr>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="7470" w:type="dxa"/>
+                                        <w:gridSpan w:val="11"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="top"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:spacing w:line="276" w:lineRule="auto"/>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                        </w:pPr>
+                                    </w:p>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:spacing w:line="276" w:lineRule="auto"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t xml:space="preserve">检验判定：  </w:t>
+                                        </w:r>
+                                        <w:bookmarkStart w:id="13" w:name="Judge1"/>
+                                        <w:bookmarkEnd w:id="13"/>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t xml:space="preserve"> 合格      </w:t>
+                                        </w:r>
+                                        <w:bookmarkStart w:id="14" w:name="Judge2"/>
+                                        <w:bookmarkEnd w:id="14"/>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t xml:space="preserve"> 不合格</w:t>
+                                        </w:r>
+                                    </w:p>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:spacing w:line="276" w:lineRule="auto"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t xml:space="preserve">处置情形：  </w:t>
+                                        </w:r>
+                                        <w:bookmarkStart w:id="15" w:name="JudgeProcess1"/>
+                                        <w:bookmarkEnd w:id="15"/>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t xml:space="preserve"> 生产      </w:t>
+                                        </w:r>
+                                        <w:bookmarkStart w:id="16" w:name="JudgeProcess2"/>
+                                        <w:bookmarkEnd w:id="16"/>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t xml:space="preserve"> 暂时停产原因分析</w:t>
+                                        </w:r>
+                                    </w:p>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:spacing w:line="480" w:lineRule="auto"/>
+                                        </w:pPr>
+                                    </w:p>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:spacing w:line="276" w:lineRule="auto"/>
+                                        </w:pPr>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t xml:space="preserve">会签：     </w:t>
+                                        </w:r>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:sym w:font="Wingdings" w:char="F06F"/>
+                                        </w:r>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t xml:space="preserve"> 制造       </w:t>
+                                        </w:r>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:sym w:font="Wingdings" w:char="F06F"/>
+                                        </w:r>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t xml:space="preserve"> 品管       </w:t>
+                                        </w:r>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:sym w:font="Wingdings" w:char="F06F"/>
+                                        </w:r>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t xml:space="preserve"> 业务       </w:t>
+                                        </w:r>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:sym w:font="Wingdings" w:char="F06F"/>
+                                        </w:r>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t xml:space="preserve"> 生管  </w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="4262" w:type="dxa"/>
+                                        <w:gridSpan w:val="7"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="top"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                        </w:pPr>
+                                    </w:p>
+                                    <w:p>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>说明：此表中检验工具代码</w:t>
+                                        </w:r>
+                                    </w:p>
+                                    <w:p>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>A代表：游标卡尺；B代表：千分尺</w:t>
+                                        </w:r>
+                                    </w:p>
+                                    <w:p>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>C代表：投影机 ；D代表：高度规</w:t>
+                                        </w:r>
+                                    </w:p>
+                                    <w:p>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>E 代表：治具 ；F代表：塞规</w:t>
+                                        </w:r>
+                                    </w:p>
+                                    <w:p>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>G代表：二次元 ；H代表：三次元</w:t>
                                         </w:r>
                                     </w:p>
                                 </w:tc>
                             </w:tr>
+                            <w:tr>
+                                <w:tblPrEx>
+                                    <w:tblBorders>
+                                        <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                        <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
+                                    </w:tblBorders>
+                                    <w:tblLayout w:type="fixed"/>
+                                    <w:tblCellMar>
+                                        <w:top w:w="0" w:type="dxa"/>
+                                        <w:left w:w="108" w:type="dxa"/>
+                                        <w:bottom w:w="0" w:type="dxa"/>
+                                        <w:right w:w="108" w:type="dxa"/>
+                                    </w:tblCellMar>
+                                </w:tblPrEx>
+                                <w:trPr>
+                                    <w:trHeight w:val="1993" w:hRule="atLeast"/>
+                                </w:trPr>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="8886" w:type="dxa"/>
+                                        <w:gridSpan w:val="14"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="top"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:pPr>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                        </w:pPr>
+                                    </w:p>
+                                    <w:p>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>相</w:t>
+                                        </w:r>
+                                    </w:p>
+                                    <w:p>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>关</w:t>
+                                        </w:r>
+                                    </w:p>
+                                    <w:p>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>单</w:t>
+                                        </w:r>
+                                    </w:p>
+                                    <w:p>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>位</w:t>
+                                        </w:r>
+                                    </w:p>
+                                    <w:p>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>意</w:t>
+                                        </w:r>
+                                    </w:p>
+                                    <w:p>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>见 审核：</w:t>
+                                        </w:r>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                                <w:u w:val="single"/>
+                                            </w:rPr>
+                                            <w:t xml:space="preserve">            </w:t>
+                                        </w:r>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t xml:space="preserve"> 技术员：</w:t>
+                                        </w:r>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                                <w:u w:val="single"/>
+                                            </w:rPr>
+                                            <w:t xml:space="preserve">              </w:t>
+                                        </w:r>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t xml:space="preserve">  检验员：</w:t>
+                                        </w:r>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                                <w:u w:val="single"/>
+                                            </w:rPr>
+                                            <w:t xml:space="preserve">              </w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                                <w:tc>
+                                    <w:tcPr>
+                                        <w:tcW w:w="2846" w:type="dxa"/>
+                                        <w:gridSpan w:val="4"/>
+                                        <w:noWrap w:val="0"/>
+                                        <w:vAlign w:val="top"/>
+                                    </w:tcPr>
+                                    <w:p>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t>品质最终判定：</w:t>
+                                        </w:r>
+                                    </w:p>
+                                    <w:p/>
+                                    <w:p/>
+                                    <w:p/>
+                                    <w:p/>
+                                    <w:p>
+                                        <w:r>
+                                            <w:rPr>
+                                                <w:rFonts w:hint="eastAsia"/>
+                                            </w:rPr>
+                                            <w:t xml:space="preserve">签名：          </w:t>
+                                        </w:r>
+                                    </w:p>
+                                </w:tc>
+                            </w:tr>
+                        </w:tbl>
+                        <w:p>
+                            <w:pPr>
+                                <w:spacing w:line="276" w:lineRule="auto"/>
+                                <w:jc w:val="left"/>
+                                <w:textAlignment w:val="center"/>
+                                <w:rPr>
+                                    <w:rFonts w:hint="eastAsia"/>
+                                </w:rPr>
+                            </w:pPr>
+                        </w:p>
+                        <w:p>
+                            <w:pPr>
+                                <w:spacing w:line="276" w:lineRule="auto"/>
+                                <w:jc w:val="left"/>
+                                <w:textAlignment w:val="center"/>
+                                <w:rPr>
+                                    <w:rFonts w:hint="eastAsia"/>
+                                </w:rPr>
+                            </w:pPr>
+                        </w:p>
+                    </#list>
+                    <#else >
+                    </#if>
 
-                        </#list>
-                        <#else>
-                        </#if>
-
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="340" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:vMerge w:val="restart"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="top"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>可</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>靠</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>性</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>测</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>试</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1229" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>测试项目</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="8505" w:type="dxa"/>
-                                    <w:gridSpan w:val="14"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>规格要求</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="425" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="340" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:vMerge w:val="continue"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="top"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1229" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="8505" w:type="dxa"/>
-                                    <w:gridSpan w:val="14"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="425" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="340" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:vMerge w:val="continue"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="top"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1229" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="8505" w:type="dxa"/>
-                                    <w:gridSpan w:val="14"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="425" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="340" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:vMerge w:val="continue"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="top"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1229" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="8505" w:type="dxa"/>
-                                    <w:gridSpan w:val="14"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="425" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="340" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>外观</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="10159" w:type="dxa"/>
-                                    <w:gridSpan w:val="16"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="340" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>结构</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="4482" w:type="dxa"/>
-                                    <w:gridSpan w:val="6"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1415" w:type="dxa"/>
-                                    <w:gridSpan w:val="3"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>实配</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="4262" w:type="dxa"/>
-                                    <w:gridSpan w:val="7"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="1787" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="7470" w:type="dxa"/>
-                                    <w:gridSpan w:val="11"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="top"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:spacing w:line="276" w:lineRule="auto"/>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                    </w:pPr>
-                                </w:p>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:spacing w:line="276" w:lineRule="auto"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve">检验判定：  </w:t>
-                                    </w:r>
-                                    <w:bookmarkStart w:id="13" w:name="Judge1"/>
-                                    <w:bookmarkEnd w:id="13"/>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 合格      </w:t>
-                                    </w:r>
-                                    <w:bookmarkStart w:id="14" w:name="Judge2"/>
-                                    <w:bookmarkEnd w:id="14"/>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 不合格</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:spacing w:line="276" w:lineRule="auto"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve">处置情形：  </w:t>
-                                    </w:r>
-                                    <w:bookmarkStart w:id="15" w:name="JudgeProcess1"/>
-                                    <w:bookmarkEnd w:id="15"/>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 生产      </w:t>
-                                    </w:r>
-                                    <w:bookmarkStart w:id="16" w:name="JudgeProcess2"/>
-                                    <w:bookmarkEnd w:id="16"/>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 暂时停产原因分析</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:spacing w:line="480" w:lineRule="auto"/>
-                                    </w:pPr>
-                                </w:p>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:spacing w:line="276" w:lineRule="auto"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve">会签：     </w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:sym w:font="Wingdings" w:char="F06F"/>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 制造       </w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:sym w:font="Wingdings" w:char="F06F"/>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 品管       </w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:sym w:font="Wingdings" w:char="F06F"/>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 业务       </w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:sym w:font="Wingdings" w:char="F06F"/>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 生管  </w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="4262" w:type="dxa"/>
-                                    <w:gridSpan w:val="7"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="top"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                    </w:pPr>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>说明：此表中检验工具代码</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>A代表：游标卡尺；B代表：千分尺</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>C代表：投影机 ；D代表：高度规</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>E 代表：治具 ；F代表：塞规</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>G代表：二次元 ；H代表：三次元</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="1993" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="8886" w:type="dxa"/>
-                                    <w:gridSpan w:val="14"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="top"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                    </w:pPr>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>相</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>关</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>单</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>位</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>意</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>见 审核：</w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                            <w:u w:val="single"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve">            </w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 技术员：</w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                            <w:u w:val="single"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve">              </w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve">  检验员：</w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                            <w:u w:val="single"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve">              </w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="2846" w:type="dxa"/>
-                                    <w:gridSpan w:val="4"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="top"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>品质最终判定：</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p/>
-                                <w:p/>
-                                <w:p/>
-                                <w:p/>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve">签名：          </w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                    </w:tbl>
-                    <w:p>
-                        <w:bookmarkStart w:id="18" w:name="_GoBack"/>
-                        <w:bookmarkEnd w:id="18"/>
-                    </w:p>
-
-                    <w:p>
-                        <w:pPr>
-                            <w:spacing w:line="276" w:lineRule="auto"/>
-                            <w:jc w:val="left"/>
-                            <w:textAlignment w:val="center"/>
-                        </w:pPr>
-                        <w:bookmarkStart w:id="18" w:name="_GoBack"/>
-                        <w:bookmarkEnd w:id="18"/>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="eastAsia"/>
-                            </w:rPr>
-                            <w:t>日期：</w:t>
-                        </w:r>
-                        <w:bookmarkStart w:id="0" w:name="PrintDate"/>
-                        <w:bookmarkEnd w:id="0"/>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="eastAsia"/>
-                            </w:rPr>
-                            <w:t xml:space="preserve">   </w:t>
-                        </w:r>
-                        <w:bookmarkStart w:id="1" w:name="Shift1"/>
-                        <w:bookmarkEnd w:id="1"/>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="eastAsia"/>
-                            </w:rPr>
-                            <w:t xml:space="preserve">    白班       </w:t>
-                        </w:r>
-                        <w:bookmarkStart w:id="2" w:name="Shift2"/>
-                        <w:bookmarkEnd w:id="2"/>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="eastAsia"/>
-                            </w:rPr>
-                            <w:t>夜班 机台：</w:t>
-                        </w:r>
-                        <w:bookmarkStart w:id="3" w:name="WorkGroupName"/>
-                        <w:bookmarkEnd w:id="3"/>
-                        <w:r>
-                            <w:rPr>
-                                <w:rFonts w:hint="eastAsia"/>
-                            </w:rPr>
-                            <w:t xml:space="preserve">                    NO:</w:t>
-                        </w:r>
-                        <w:bookmarkStart w:id="4" w:name="LotNo"/>
-                        <w:bookmarkEnd w:id="4"/>
-                    </w:p>
-                    <w:tbl>
-                        <w:tblPr>
-                            <w:tblStyle w:val="4"/>
-                            <w:tblW w:w="11732" w:type="dxa"/>
-                            <w:tblInd w:w="0" w:type="dxa"/>
-                            <w:tblBorders>
-                                <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                            </w:tblBorders>
-                            <w:tblLayout w:type="fixed"/>
-                            <w:tblCellMar>
-                                <w:top w:w="0" w:type="dxa"/>
-                                <w:left w:w="108" w:type="dxa"/>
-                                <w:bottom w:w="0" w:type="dxa"/>
-                                <w:right w:w="108" w:type="dxa"/>
-                            </w:tblCellMar>
-                        </w:tblPr>
-                        <w:tblGrid>
-                            <w:gridCol w:w="430"/>
-                            <w:gridCol w:w="1143"/>
-                            <w:gridCol w:w="1229"/>
-                            <w:gridCol w:w="850"/>
-                            <w:gridCol w:w="254"/>
-                            <w:gridCol w:w="597"/>
-                            <w:gridCol w:w="850"/>
-                            <w:gridCol w:w="702"/>
-                            <w:gridCol w:w="149"/>
-                            <w:gridCol w:w="850"/>
-                            <w:gridCol w:w="416"/>
-                            <w:gridCol w:w="435"/>
-                            <w:gridCol w:w="850"/>
-                            <w:gridCol w:w="131"/>
-                            <w:gridCol w:w="720"/>
-                            <w:gridCol w:w="850"/>
-                            <w:gridCol w:w="851"/>
-                            <w:gridCol w:w="425"/>
-                        </w:tblGrid>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="397" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>工 序</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="3780" w:type="dxa"/>
-                                    <w:gridSpan w:val="5"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:bookmarkStart w:id="5" w:name="ProcessName"/>
-                                    <w:bookmarkEnd w:id="5"/>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1701" w:type="dxa"/>
-                                    <w:gridSpan w:val="3"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>首件制作原因</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="4678" w:type="dxa"/>
-                                    <w:gridSpan w:val="8"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="397" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>指令编号</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="3780" w:type="dxa"/>
-                                    <w:gridSpan w:val="5"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:bookmarkStart w:id="6" w:name="MoNumber"/>
-                                    <w:bookmarkEnd w:id="6"/>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1701" w:type="dxa"/>
-                                    <w:gridSpan w:val="3"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>品名规格</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="4678" w:type="dxa"/>
-                                    <w:gridSpan w:val="8"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:bookmarkStart w:id="7" w:name="PartName"/>
-                                    <w:bookmarkEnd w:id="7"/>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="397" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>订单数量</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1229" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:bookmarkStart w:id="8" w:name="TargetQty"/>
-                                    <w:bookmarkEnd w:id="8"/>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1104" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>取样数量</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1447" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:bookmarkStart w:id="9" w:name="SamplQty"/>
-                                    <w:bookmarkEnd w:id="9"/>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1701" w:type="dxa"/>
-                                    <w:gridSpan w:val="3"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>材质规格</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="4678" w:type="dxa"/>
-                                    <w:gridSpan w:val="8"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="397" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>检验时间</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="3780" w:type="dxa"/>
-                                    <w:gridSpan w:val="5"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:bookmarkStart w:id="10" w:name="InspectTime"/>
-                                    <w:bookmarkEnd w:id="10"/>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1701" w:type="dxa"/>
-                                    <w:gridSpan w:val="3"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>取样时间</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="4678" w:type="dxa"/>
-                                    <w:gridSpan w:val="8"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:bookmarkStart w:id="11" w:name="SamplTime"/>
-                                    <w:bookmarkEnd w:id="11"/>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="340" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="430" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>项次</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1143" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>检验项目</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1229" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>检验工具</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="850" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>1</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="851" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>2</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="850" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>3</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="851" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>4</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="850" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>5</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="851" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>6</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="850" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>7</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="851" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>8</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="850" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>9</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="851" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>10</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="425" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>判定</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-
-                        <#if studentList?? && (studentList?size > 0) >
-                            <#list studentList as student>
-                                <w:tr>
-                                    <w:tblPrEx>
-                                        <w:tblBorders>
-                                            <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                            <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                            <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                            <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                            <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                            <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                        </w:tblBorders>
-                                        <w:tblLayout w:type="fixed"/>
-                                        <w:tblCellMar>
-                                            <w:top w:w="0" w:type="dxa"/>
-                                            <w:left w:w="108" w:type="dxa"/>
-                                            <w:bottom w:w="0" w:type="dxa"/>
-                                            <w:right w:w="108" w:type="dxa"/>
-                                        </w:tblCellMar>
-                                    </w:tblPrEx>
-                                    <w:trPr>
-                                        <w:trHeight w:val="340" w:hRule="atLeast"/>
-                                    </w:trPr>
-                                    <w:tc>
-                                        <w:tcPr>
-                                            <w:tcW w:w="430" w:type="dxa"/>
-                                            <w:noWrap w:val="0"/>
-                                            <w:vAlign w:val="center"/>
-                                        </w:tcPr>
-                                        <w:p>
-                                            <w:pPr>
-                                                <w:jc w:val="center"/>
-                                                <w:rPr>
-                                                    <w:rFonts w:hint="default" w:eastAsia="宋体"/>
-                                                    <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                                </w:rPr>
-                                            </w:pPr>
-                                            <w:bookmarkStart w:id="12" w:name="Bookmark_table"/>
-                                            <w:bookmarkEnd w:id="12"/>
-                                            <w:r>
-                                                <w:rPr>
-                                                    <w:rFonts w:hint="eastAsia"/>
-                                                    <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                                </w:rPr>
-                                                <w:t>${student.id}</w:t>
-                                            </w:r>
-                                        </w:p>
-                                    </w:tc>
-                                    <w:tc>
-                                        <w:tcPr>
-                                            <w:tcW w:w="1143" w:type="dxa"/>
-                                            <w:noWrap w:val="0"/>
-                                            <w:vAlign w:val="center"/>
-                                        </w:tcPr>
-                                        <w:p>
-                                            <w:pPr>
-                                                <w:jc w:val="center"/>
-                                                <w:rPr>
-                                                    <w:rFonts w:hint="eastAsia" w:eastAsia="宋体"/>
-                                                    <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                                </w:rPr>
-                                            </w:pPr>
-                                            <w:r>
-                                                <w:rPr>
-                                                    <w:rFonts w:hint="eastAsia"/>
-                                                    <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                                </w:rPr>
-                                                <w:t>${student.name}</w:t>
-                                            </w:r>
-                                        </w:p>
-                                    </w:tc>
-                                    <w:tc>
-                                        <w:tcPr>
-                                            <w:tcW w:w="1229" w:type="dxa"/>
-                                            <w:noWrap w:val="0"/>
-                                            <w:vAlign w:val="center"/>
-                                        </w:tcPr>
-                                        <w:p>
-                                            <w:pPr>
-                                                <w:jc w:val="center"/>
-                                            </w:pPr>
-                                        </w:p>
-                                    </w:tc>
-                                    <w:tc>
-                                        <w:tcPr>
-                                            <w:tcW w:w="850" w:type="dxa"/>
-                                            <w:noWrap w:val="0"/>
-                                            <w:vAlign w:val="center"/>
-                                        </w:tcPr>
-                                        <w:p>
-                                            <w:pPr>
-                                                <w:jc w:val="center"/>
-                                                <w:rPr>
-                                                    <w:rFonts w:hint="eastAsia" w:eastAsia="宋体"/>
-                                                    <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                                </w:rPr>
-                                            </w:pPr>
-                                            <w:r>
-                                                <w:rPr>
-                                                    <w:rFonts w:hint="eastAsia"/>
-                                                    <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                                </w:rPr>
-                                                <w:t>${student.age}</w:t>
-                                            </w:r>
-                                        </w:p>
-                                    </w:tc>
-                                    <w:tc>
-                                        <w:tcPr>
-                                            <w:tcW w:w="851" w:type="dxa"/>
-                                            <w:gridSpan w:val="2"/>
-                                            <w:noWrap w:val="0"/>
-                                            <w:vAlign w:val="center"/>
-                                        </w:tcPr>
-                                        <w:p>
-                                            <w:pPr>
-                                                <w:jc w:val="center"/>
-                                                <w:rPr>
-                                                    <w:rFonts w:hint="eastAsia" w:eastAsia="宋体"/>
-                                                    <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                                </w:rPr>
-                                            </w:pPr>
-                                            <w:r>
-                                                <w:rPr>
-                                                    <w:rFonts w:hint="eastAsia"/>
-                                                    <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                                </w:rPr>
-                                                <w:t></w:t>
-                                            </w:r>
-                                        </w:p>
-                                    </w:tc>
-                                    <w:tc>
-                                        <w:tcPr>
-                                            <w:tcW w:w="850" w:type="dxa"/>
-                                            <w:noWrap w:val="0"/>
-                                            <w:vAlign w:val="center"/>
-                                        </w:tcPr>
-                                        <w:p>
-                                            <w:pPr>
-                                                <w:jc w:val="center"/>
-                                                <w:rPr>
-                                                    <w:rFonts w:hint="eastAsia" w:eastAsia="宋体"/>
-                                                    <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                                </w:rPr>
-                                            </w:pPr>
-                                            <w:r>
-                                                <w:rPr>
-                                                    <w:rFonts w:hint="eastAsia"/>
-                                                    <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                                </w:rPr>
-                                                <w:t></w:t>
-                                            </w:r>
-                                        </w:p>
-                                    </w:tc>
-                                    <w:tc>
-                                        <w:tcPr>
-                                            <w:tcW w:w="851" w:type="dxa"/>
-                                            <w:gridSpan w:val="2"/>
-                                            <w:noWrap w:val="0"/>
-                                            <w:vAlign w:val="center"/>
-                                        </w:tcPr>
-                                        <w:p>
-                                            <w:pPr>
-                                                <w:jc w:val="center"/>
-                                            </w:pPr>
-                                        </w:p>
-                                    </w:tc>
-                                    <w:tc>
-                                        <w:tcPr>
-                                            <w:tcW w:w="850" w:type="dxa"/>
-                                            <w:noWrap w:val="0"/>
-                                            <w:vAlign w:val="center"/>
-                                        </w:tcPr>
-                                        <w:p>
-                                            <w:pPr>
-                                                <w:jc w:val="center"/>
-                                            </w:pPr>
-                                        </w:p>
-                                    </w:tc>
-                                    <w:tc>
-                                        <w:tcPr>
-                                            <w:tcW w:w="851" w:type="dxa"/>
-                                            <w:gridSpan w:val="2"/>
-                                            <w:noWrap w:val="0"/>
-                                            <w:vAlign w:val="center"/>
-                                        </w:tcPr>
-                                        <w:p>
-                                            <w:pPr>
-                                                <w:jc w:val="center"/>
-                                            </w:pPr>
-                                        </w:p>
-                                    </w:tc>
-                                    <w:tc>
-                                        <w:tcPr>
-                                            <w:tcW w:w="850" w:type="dxa"/>
-                                            <w:noWrap w:val="0"/>
-                                            <w:vAlign w:val="center"/>
-                                        </w:tcPr>
-                                        <w:p>
-                                            <w:pPr>
-                                                <w:jc w:val="center"/>
-                                            </w:pPr>
-                                        </w:p>
-                                    </w:tc>
-                                    <w:tc>
-                                        <w:tcPr>
-                                            <w:tcW w:w="851" w:type="dxa"/>
-                                            <w:gridSpan w:val="2"/>
-                                            <w:noWrap w:val="0"/>
-                                            <w:vAlign w:val="center"/>
-                                        </w:tcPr>
-                                        <w:p>
-                                            <w:pPr>
-                                                <w:jc w:val="center"/>
-                                            </w:pPr>
-                                        </w:p>
-                                    </w:tc>
-                                    <w:tc>
-                                        <w:tcPr>
-                                            <w:tcW w:w="850" w:type="dxa"/>
-                                            <w:noWrap w:val="0"/>
-                                            <w:vAlign w:val="center"/>
-                                        </w:tcPr>
-                                        <w:p>
-                                            <w:pPr>
-                                                <w:jc w:val="center"/>
-                                            </w:pPr>
-                                        </w:p>
-                                    </w:tc>
-                                    <w:tc>
-                                        <w:tcPr>
-                                            <w:tcW w:w="851" w:type="dxa"/>
-                                            <w:noWrap w:val="0"/>
-                                            <w:vAlign w:val="center"/>
-                                        </w:tcPr>
-                                        <w:p>
-                                            <w:pPr>
-                                                <w:jc w:val="center"/>
-                                            </w:pPr>
-                                        </w:p>
-                                    </w:tc>
-                                    <w:tc>
-                                        <w:tcPr>
-                                            <w:tcW w:w="425" w:type="dxa"/>
-                                            <w:noWrap w:val="0"/>
-                                            <w:vAlign w:val="center"/>
-                                        </w:tcPr>
-                                        <w:p>
-                                            <w:pPr>
-                                                <w:jc w:val="center"/>
-                                                <w:rPr>
-                                                    <w:rFonts w:hint="eastAsia" w:eastAsia="宋体"/>
-                                                    <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                                </w:rPr>
-                                            </w:pPr>
-                                            <w:r>
-                                                <w:rPr>
-                                                    <w:rFonts w:hint="eastAsia"/>
-                                                    <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
-                                                </w:rPr>
-                                                <w:t>${student.sex}</w:t>
-                                            </w:r>
-                                        </w:p>
-                                    </w:tc>
-                                </w:tr>
-
-                            </#list>
-                        <#else>
-                        </#if>
-
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="340" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:vMerge w:val="restart"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="top"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>可</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>靠</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>性</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>测</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>试</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1229" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>测试项目</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="8505" w:type="dxa"/>
-                                    <w:gridSpan w:val="14"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>规格要求</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="425" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="340" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:vMerge w:val="continue"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="top"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1229" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="8505" w:type="dxa"/>
-                                    <w:gridSpan w:val="14"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="425" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="340" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:vMerge w:val="continue"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="top"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1229" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="8505" w:type="dxa"/>
-                                    <w:gridSpan w:val="14"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="425" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="340" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:vMerge w:val="continue"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="top"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1229" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="8505" w:type="dxa"/>
-                                    <w:gridSpan w:val="14"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="425" w:type="dxa"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="340" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>外观</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="10159" w:type="dxa"/>
-                                    <w:gridSpan w:val="16"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="340" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1573" w:type="dxa"/>
-                                    <w:gridSpan w:val="2"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>结构</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="4482" w:type="dxa"/>
-                                    <w:gridSpan w:val="6"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="1415" w:type="dxa"/>
-                                    <w:gridSpan w:val="3"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>实配</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="4262" w:type="dxa"/>
-                                    <w:gridSpan w:val="7"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="center"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:jc w:val="center"/>
-                                    </w:pPr>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="1787" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="7470" w:type="dxa"/>
-                                    <w:gridSpan w:val="11"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="top"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:spacing w:line="276" w:lineRule="auto"/>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                    </w:pPr>
-                                </w:p>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:spacing w:line="276" w:lineRule="auto"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve">检验判定：  </w:t>
-                                    </w:r>
-                                    <w:bookmarkStart w:id="13" w:name="Judge1"/>
-                                    <w:bookmarkEnd w:id="13"/>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 合格      </w:t>
-                                    </w:r>
-                                    <w:bookmarkStart w:id="14" w:name="Judge2"/>
-                                    <w:bookmarkEnd w:id="14"/>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 不合格</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:spacing w:line="276" w:lineRule="auto"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve">处置情形：  </w:t>
-                                    </w:r>
-                                    <w:bookmarkStart w:id="15" w:name="JudgeProcess1"/>
-                                    <w:bookmarkEnd w:id="15"/>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 生产      </w:t>
-                                    </w:r>
-                                    <w:bookmarkStart w:id="16" w:name="JudgeProcess2"/>
-                                    <w:bookmarkEnd w:id="16"/>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 暂时停产原因分析</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:spacing w:line="480" w:lineRule="auto"/>
-                                    </w:pPr>
-                                </w:p>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:spacing w:line="276" w:lineRule="auto"/>
-                                    </w:pPr>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve">会签：     </w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:sym w:font="Wingdings" w:char="F06F"/>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 制造       </w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:sym w:font="Wingdings" w:char="F06F"/>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 品管       </w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:sym w:font="Wingdings" w:char="F06F"/>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 业务       </w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:sym w:font="Wingdings" w:char="F06F"/>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 生管  </w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="4262" w:type="dxa"/>
-                                    <w:gridSpan w:val="7"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="top"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                    </w:pPr>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>说明：此表中检验工具代码</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>A代表：游标卡尺；B代表：千分尺</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>C代表：投影机 ；D代表：高度规</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>E 代表：治具 ；F代表：塞规</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>G代表：二次元 ；H代表：三次元</w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                        <w:tr>
-                            <w:tblPrEx>
-                                <w:tblBorders>
-                                    <w:top w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:left w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:bottom w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:right w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideH w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                    <w:insideV w:val="single" w:color="000000" w:sz="4" w:space="0"/>
-                                </w:tblBorders>
-                                <w:tblLayout w:type="fixed"/>
-                                <w:tblCellMar>
-                                    <w:top w:w="0" w:type="dxa"/>
-                                    <w:left w:w="108" w:type="dxa"/>
-                                    <w:bottom w:w="0" w:type="dxa"/>
-                                    <w:right w:w="108" w:type="dxa"/>
-                                </w:tblCellMar>
-                            </w:tblPrEx>
-                            <w:trPr>
-                                <w:trHeight w:val="1993" w:hRule="atLeast"/>
-                            </w:trPr>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="8886" w:type="dxa"/>
-                                    <w:gridSpan w:val="14"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="top"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:pPr>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                    </w:pPr>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>相</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>关</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>单</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>位</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>意</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>见 审核：</w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                            <w:u w:val="single"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve">            </w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve"> 技术员：</w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                            <w:u w:val="single"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve">              </w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve">  检验员：</w:t>
-                                    </w:r>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                            <w:u w:val="single"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve">              </w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                            <w:tc>
-                                <w:tcPr>
-                                    <w:tcW w:w="2846" w:type="dxa"/>
-                                    <w:gridSpan w:val="4"/>
-                                    <w:noWrap w:val="0"/>
-                                    <w:vAlign w:val="top"/>
-                                </w:tcPr>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t>品质最终判定：</w:t>
-                                    </w:r>
-                                </w:p>
-                                <w:p/>
-                                <w:p/>
-                                <w:p/>
-                                <w:p/>
-                                <w:p>
-                                    <w:r>
-                                        <w:rPr>
-                                            <w:rFonts w:hint="eastAsia"/>
-                                        </w:rPr>
-                                        <w:t xml:space="preserve">签名：          </w:t>
-                                    </w:r>
-                                </w:p>
-                            </w:tc>
-                        </w:tr>
-                    </w:tbl>
 
 
 
