@@ -19,8 +19,10 @@ import java.io.File;
 import java.io.PrintWriter;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
+import java.math.BigDecimal;
 import java.sql.*;
 import java.text.DateFormat;
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.Date;
@@ -28,6 +30,25 @@ import java.util.Date;
 //@RunWith(SpringRunner.class)
 //@SpringBootTest
 public class LiaotaoTests {
+
+	@Test
+	public void test12() throws SQLException {
+		List<Double> list = new ArrayList<>();
+		list.add(1.2);
+		list.add(1.3);
+		list.add(1.4);
+		Double aDouble = list.stream().reduce((one, two) -> one * two).orElse(null);
+		Double s=1.0;
+		for(Double d:list){
+			s=s*d;
+		}
+		BigDecimal b =new BigDecimal(1.2895);
+		//b.setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue();
+		DecimalFormat df = new DecimalFormat("#0.00");
+		System.out.printf(df.format(b)+"\n");
+		System.out.printf(aDouble.toString()+"\n");
+		System.out.printf(s.toString());
+	}
 
 	@Test
 	public void test() throws SQLException {
