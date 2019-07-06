@@ -98,7 +98,7 @@
                                 <w:rPr>
                                     <w:rFonts w:hint="eastAsia"/>
                                 </w:rPr>
-                                <w:t xml:space="preserve">    白班       </w:t>
+                                <w:t xml:space="preserve">    ■ 白班       </w:t>
                             </w:r>
                             <w:bookmarkStart w:id="2" w:name="Shift2"/>
                             <w:bookmarkEnd w:id="2"/>
@@ -106,7 +106,7 @@
                                 <w:rPr>
                                     <w:rFonts w:hint="eastAsia"/>
                                 </w:rPr>
-                                <w:t>夜班 机台：</w:t>
+                                <w:t>□ 夜班 机台：</w:t>
                             </w:r>
                             <w:bookmarkStart w:id="3" w:name="WorkGroupName"/>
                             <w:bookmarkEnd w:id="3"/>
@@ -1646,7 +1646,7 @@
                                             <w:rPr>
                                                 <w:rFonts w:hint="eastAsia"/>
                                             </w:rPr>
-                                            <w:t xml:space="preserve"> 合格      </w:t>
+                                            <w:t xml:space="preserve"> ■ 合格      </w:t>
                                         </w:r>
                                         <w:bookmarkStart w:id="14" w:name="Judge2"/>
                                         <w:bookmarkEnd w:id="14"/>
@@ -1654,7 +1654,7 @@
                                             <w:rPr>
                                                 <w:rFonts w:hint="eastAsia"/>
                                             </w:rPr>
-                                            <w:t xml:space="preserve"> 不合格</w:t>
+                                            <w:t xml:space="preserve"> □ 不合格</w:t>
                                         </w:r>
                                     </w:p>
                                     <w:p>
