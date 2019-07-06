@@ -828,8 +828,10 @@
                                 </w:tc>
                             </w:tr>
 
-                            <#if r.list?? && (r.list?size > 0) >
-                                <#list r.list as item>
+                            <#-- 表格 start-->
+                            <#-- <#if r.list?? && (r.list?size > 0) >
+                                <#list r.list as item> -->
+                                <#list [0,1,2,3,4,5,6,7,8,9,10,11,12,13] as i>
                                     <w:tr>
                                         <w:tblPrEx>
                                             <w:tblBorders>
@@ -872,7 +874,7 @@
                                                         <w:rFonts w:hint="eastAsia"/>
                                                         <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
                                                     </w:rPr>
-                                                    <w:t>${item.sequece}</w:t>
+                                                    <w:t>${(r.list[i].sequece)!}</w:t>
                                                 </w:r>
                                             </w:p>
                                         </w:tc>
@@ -895,7 +897,7 @@
                                                         <w:rFonts w:hint="eastAsia"/>
                                                         <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
                                                     </w:rPr>
-                                                    <w:t>${item.name}</w:t>
+                                                    <w:t>${(r.list[i].name)!}</w:t>
                                                 </w:r>
                                             </w:p>
                                         </w:tc>
@@ -1094,8 +1096,9 @@
                                     </w:tr>
 
                                 </#list>
-                            <#else>
-                            </#if>
+                            <#-- <#else>
+                            </#if> -->
+                            <#-- 表格 end-->
 
                             <w:tr>
                                 <w:tblPrEx>
@@ -1949,7 +1952,7 @@
                                 </w:tc>
                             </w:tr>
                         </w:tbl>
-                        <w:p>
+                        <#-- <w:p>
                             <w:pPr>
                                 <w:spacing w:line="276" w:lineRule="auto"/>
                                 <w:jc w:val="left"/>
@@ -1958,10 +1961,10 @@
                                     <w:rFonts w:hint="eastAsia"/>
                                 </w:rPr>
                             </w:pPr>
-                        </w:p>
+                        </w:p> -->
                         <w:p>
                             <w:pPr>
-                                <w:spacing w:line="276" w:lineRule="auto"/>
+                                <w:spacing w:line="419" w:lineRule="auto"/>
                                 <w:jc w:val="left"/>
                                 <w:textAlignment w:val="center"/>
                                 <w:rPr>

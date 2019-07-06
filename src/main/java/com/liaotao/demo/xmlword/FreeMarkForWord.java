@@ -33,7 +33,7 @@ public class FreeMarkForWord {
         List<R> rs =new ArrayList<>();
         R r = new R();
         List<Item> list =new ArrayList<>();
-        for(int i=0;i<=13;i++){
+        for(int i=0;i<=8;i++){
             Item item=new Item();
             item.setSequece(i+1);
             item.setName("liaotao");
@@ -41,7 +41,10 @@ public class FreeMarkForWord {
         }
         r.setList(list);
         rs.add(r);
-        rs.add(new R());
+        for(int j=0;j<=8;j++){
+            rs.add(new R());
+        }
+
 
         //向数据集中添加数据
         dataModel.put("rs", rs);
