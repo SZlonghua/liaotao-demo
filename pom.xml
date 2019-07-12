@@ -93,6 +93,31 @@
 			<version>3.6.1</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>pdfbox</artifactId>
+			<version>2.0.16</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/fontbox -->
+		<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>fontbox</artifactId>
+			<version>2.0.16</version>
+		</dependency>
+		<!--&lt;!&ndash; https://mvnrepository.com/artifact/org.apache.pdfbox/jempbox &ndash;&gt;
+		<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>jempbox</artifactId>
+			<version>1.8.16</version>
+		</dependency>-->
+		<!--<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>pdfbox-app</artifactId>
+			<version>2.0.15</version>
+		</dependency>-->
+
+
 	</dependencies>
 
 	<build>

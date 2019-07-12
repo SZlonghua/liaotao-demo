@@ -1964,7 +1964,7 @@
                         </w:p> -->
                         <w:p>
                             <w:pPr>
-                                <w:spacing w:line="419" w:lineRule="auto"/>
+                                <w:spacing w:line="404" w:lineRule="auto"/>
                                 <w:jc w:val="left"/>
                                 <w:textAlignment w:val="center"/>
                                 <w:rPr>
@@ -2237,13 +2237,25 @@
                     <w:pPr>
                         <w:pStyle w:val="3"/>
                         <w:rPr>
+                            <w:rFonts w:hint="default" w:eastAsia="宋体"/>
                             <w:b/>
                             <w:sz w:val="21"/>
                             <w:szCs w:val="21"/>
+                            <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
                         </w:rPr>
                     </w:pPr>
                     <w:bookmarkStart w:id="17" w:name="Title"/>
                     <w:bookmarkEnd w:id="17"/>
+                    <w:r>
+                        <w:rPr>
+                            <w:rFonts w:hint="eastAsia"/>
+                            <w:b/>
+                            <w:sz w:val="21"/>
+                            <w:szCs w:val="21"/>
+                            <w:lang w:val="en-US" w:eastAsia="zh-CN"/>
+                        </w:rPr>
+                        <w:t>巡检记录表</w:t>
+                    </w:r>
                 </w:p>
             </w:hdr>
         </pkg:xmlData>

@@ -41,7 +41,7 @@ public class FreeMarkForWord {
         }
         r.setList(list);
         rs.add(r);
-        for(int j=0;j<=8;j++){
+        for(int j=0;j<=0;j++){
             rs.add(new R());
         }
 
